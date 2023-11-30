@@ -3,14 +3,14 @@ const router = express.Router()
 
 const usercontroller = require('../controllers/ekstras')
 
-router.get('/ekstras', usercontroller.index)
+router.get('/SemuaEkstra', usercontroller.index)
 
 router.get('/ekstra/:id', usercontroller.show)
 
-  router.post('/ekstra', usercontroller.store)
+  router.post('/TambahEkstra', usercontroller.store)
   
-  router.put('/ekstra/:id', usercontroller.update)
+  router.put('/UbahEkstra/:id', usercontroller.update)
   
-  router.delete('/ekstra/:id', usercontroller.delete)
+  router.delete('/HapusEkstra/:id', usercontroller.delete)
 
   module.exports = router
